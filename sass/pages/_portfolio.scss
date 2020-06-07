@@ -8,7 +8,10 @@
     };
 }
 .project {
-    height: 90vh;
+    &:not(:last-child) {
+        padding-bottom: 300px;
+    }
+    height: 100%;
     &__description {
         font-family: 'Rubik', sans-serif;
         color: $color-default;
@@ -18,4 +21,31 @@
     &-title {
         color: $color-default;
     }
+    &__links {
+        display: flex;
+        align-items: center;
+        a {
+            color: $color-default;
+            font-size: 1.1rem;
+        }
+    }
+    &__content {
+        position: relative;
+        img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;  
+        background-image: $color-main-light;     
+        
+    }
+}
+}
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-color: $color-main-light;
 }
