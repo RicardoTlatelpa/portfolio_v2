@@ -8,9 +8,6 @@
     };
 }
 .project {
-    &:not(:last-child) {
-        padding-bottom: 300px;
-    }
     height: 100%;
     &__description {
         font-family: 'Rubik', sans-serif;
@@ -48,4 +45,9 @@
     height: 100%;
     opacity: 0.4;
     background-color: $color-main-light;
+    transition: all .1s linear;
+    &:hover {
+        opacity: 0;
+        z-index:0;
+    }
 }
