@@ -1,0 +1,26 @@
+.header {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    &__title {
+        font-size: 1rem;
+        font-weight: bold;
+        color: $color-main-light;
+    }
+    &__nav {
+        display: flex;
+        list-style: none;        
+        li:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}
+.nav {
+    &__item {
+        font-size: 1rem;
+        text-decoration: none;
+        color: $color-main-light;
+        font-weight: 300;
+    }
+    
+}

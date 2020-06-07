@@ -1,0 +1,28 @@
+$font-size-main: 5.6rem;
+$font-size-large: 4.2rem;
+$font-size-medium: 3rem;
+$font-size-small: 2.3rem;
+$font-size-text: 1.6rem;
+$font-size-normal: .8rem;
+.title{
+    color:$color-default;
+    font-size: $font-size-small;
+    &--huge {
+        font-size: $font-size-medium;
+    }
+    &--box {
+        display: inline-block;
+        font-size: $font-size-small;
+        color: $color-default;
+        padding: .5rem 2rem;
+        border: 1px dashed $color-default;
+    }
+    &--project {
+        font-size: $font-size-text;
+        color: $color-default;
+    }
+    &--footer {
+        font-size: $font-size-normal;
+        color: $color-default;
+    }
+}

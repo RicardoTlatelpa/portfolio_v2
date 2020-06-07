@@ -1,0 +1,10 @@
+.footer {
+    background-color: $color-main-dark;
+    padding-top: 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    &__logo {
+        margin: 0 .2rem;
+    }
+}

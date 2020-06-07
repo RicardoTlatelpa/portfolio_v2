@@ -1,0 +1,42 @@
+.landing-page {
+    height: 100vh;
+    width: 100%;
+    position:relative;
+    overflow: hidden;
+    
+    &__intro {
+        padding: 0 1rem;
+        position: absolute;
+        top: 30%;
+        right: 50%;
+    }
+    &__description {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 10%, 46% 59%, 0% 100%);
+        background: white;
+        position: fixed;        
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        
+        
+    }
+}
+.shadow-wrap {
+    filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.4));
+
+}
+
+.particle-container {
+    background-color: $color-main-light;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 10%, 0 100%, 100% 100%, 100% 100%);
+    z-index: -1;
+    
+}
+.highlight {
+    color: $color-main-light;
+}

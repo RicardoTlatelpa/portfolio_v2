@@ -1,0 +1,21 @@
+.portfolio {
+    padding-top: 300px;
+    background-image: linear-gradient(to bottom, $color-main-light, $color-main-dark);
+    
+    width: 100%;
+    &__header {
+        text-align: center;
+    };
+}
+.project {
+    height: 90vh;
+    &__description {
+        font-family: 'Rubik', sans-serif;
+        color: $color-default;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    &-title {
+        color: $color-default;
+    }
+}
