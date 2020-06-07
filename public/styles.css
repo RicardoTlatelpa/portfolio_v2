@@ -171,7 +171,8 @@ body {
       cursor: pointer; }
   .project__tags {
     width: 80%;
-    margin-bottom: .2rem !important; }
+    margin-bottom: .2rem !important;
+    color: #e5e5e5; }
 
 .layer {
   position: absolute;
