@@ -183,7 +183,7 @@ body {
     z-index: 0; }
 
 .contact-form {
-  padding-top: 300px;
+  padding-top: 150px;
   padding-bottom: 5rem; }
   .contact-form__container {
     display: flex;
