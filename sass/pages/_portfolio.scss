@@ -33,8 +33,12 @@
         height: 100%;
         width: 100%;  
         background-image: $color-main-light;     
-        
+        cursor: pointer;
     }
+}
+&__tags {
+    width: 80%;
+    margin-bottom: .2rem !important;
 }
 }
 .layer {

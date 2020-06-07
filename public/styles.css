@@ -167,7 +167,11 @@ body {
       object-fit: cover;
       height: 100%;
       width: 100%;
-      background-image: #0086DA; }
+      background-image: #0086DA;
+      cursor: pointer; }
+  .project__tags {
+    width: 80%;
+    margin-bottom: .2rem !important; }
 
 .layer {
   position: absolute;
@@ -203,7 +207,7 @@ label {
 
 .footer {
   background-color: #016ECD;
-  padding-top: 2rem;
+  padding: 2rem;
   display: flex;
   align-items: flex-end;
   justify-content: center; }
