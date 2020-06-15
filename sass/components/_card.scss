@@ -1,0 +1,17 @@
+.card {
+    color: black; 
+    border-radius: 10px;
+    padding: 4rem 4rem 2rem 7rem;
+    
+    
+    &--right {
+        text-align: right;
+    }
+    &__feature {
+        display: inline-block;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: bold;
+        background-image: $shiny-linear-image;
+    }
+}

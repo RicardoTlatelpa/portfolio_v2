@@ -21,4 +21,8 @@
         transform: translateY(10px) scale(0.9);
         box-shadow: none;
     }
+    &--fadein {
+        animation-name: moveUp;
+        animation-duration: 0.8s;
+    }
 }

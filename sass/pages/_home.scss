@@ -5,10 +5,12 @@
     overflow: hidden;
     
     &__intro {
+        animation-name: moveUp;
+        animation-duration: 0.3s;
         padding: 0 1rem;
         position: absolute;
         top: 30%;
-        right: 50%;
+        right: 43%;
     }
     &__description {
         clip-path: polygon(0% 0%, 100% 0%, 100% 10%, 46% 59%, 0% 100%);
@@ -24,7 +26,6 @@
 }
 .shadow-wrap {
     filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.4));
-
 }
 
 .particle-container {

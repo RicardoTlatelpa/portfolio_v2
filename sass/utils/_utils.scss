@@ -14,8 +14,13 @@
     margin-top: 6rem !important;
 }
 .even-spacing {
-    padding-bottom: 18.75rem !important;
+    padding-bottom: 7rem !important;
 }
 .center {
     text-align: center ;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

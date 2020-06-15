@@ -6,13 +6,18 @@
 .grid-container { 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: min-content;
+    grid-auto-rows: 1fr;
+    
 }
 .col-4 {
-    grid-column: 2 /span 3;
+    grid-column: 2 /span 4;
+    z-index: 100000;    
+    height: 100%;
 }
 .col-8 {
-    grid-column: 5 / -1;
+    background-color: $color-default;
+    grid-column: 6 / -1;
+    
 }
 .col-center {
     grid-column: 5 / 9;
