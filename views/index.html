@@ -17,8 +17,11 @@
         <ul class="header__nav">
             <li > <a class="nav__item"  href="#">Resume</a> </li>
             <li > <a class="nav__item"  href="#portfolio">Portfolio</a></li>
+            <li><a  class="nav__item" href="#about">About</a></li>
             <li > <a class="nav__item" href="#contact">Contact</a></li>
+            
         </ul>
+        
     </header>
         <div class="row landing-page__intro ">
         <h1 class = "title--huge u-margin-b-small">I'm a <span class = "highlight">Software Engineer </span><br/>based in NYC.</h1>
@@ -33,12 +36,15 @@
     <div id="particles-js" class="particle-container">
         <h1>Ricardo Tlatelpa</h1>
     </div>
+    <div class="rotated-email">
+    <p>@rtlatelpa@gmail.com</p>
+    </div>
 </div>
 
 
 <section class="portfolio">
     
-    <div id = "portfolio" class="portfolio__header row">
+    <div id = "portfolio" class="section-header row">
         <h1>01.Portfolio</h1>
     </div>
 
@@ -52,7 +58,7 @@
             <div class="card--right">
             <p class = "card__feature">Featured Project</p>
             <h1 class = "title--project u-margin-t-small">Node-Todo</h1>           
-                <p class = "project__description u-margin-t-small">A fast and friendly Todo-list that helps users priotize their daily tasks.</p>  
+                <p class = "project__description ">A fast and friendly Todo-list that helps users priotize their daily tasks.</p>  
             <p class = "project__tags u-margin-t-small">ReactJs, Nodejs, Expressjs, Google oAuth, PassportJs, MongoDB</p>
             <div class="card__links">
             <img src="/logo.svg" alt="github">
@@ -62,14 +68,12 @@
 
     </div>
 
-    <div class="project row grid-container even-spacing">
-        
-    
+    <div class="project row grid-container even-spacing">            
         <div class="project-info--2 col-4--2 card">
             
             <p class = "card__feature">Featured Project</p>
             <h1 class = "title--project u-margin-t-small">Emaily</h1>           
-                <p class = "project__description u-margin-t-small">Taking advantage of the Stripe/Sendgrid/Google Oauth APIs, with a react/redux front end. Users can reach their emailing list and get feedback from their users.</p>  
+                <p class = "project__description ">Taking advantage of the Stripe/Sendgrid/Google Oauth APIs, with a react/redux front end. Users can reach their emailing list and get feedback from their users.</p>  
             <p class = "project__tags u-margin-t-small">ReactJs, Redux/Redux Form, Nodejs, Expressjs, Google oAuth, PassportJs, Stripe API,Sendgrid API, MongoDB</p>
             <div class="card__links">
             <img src="/logo.svg" alt="github">
@@ -90,7 +94,7 @@
             <div class="card--right">
             <p class = "card__feature">Featured Project</p>
             <h1 class = "title--project u-margin-t-small">Couple-Movies</h1>           
-                <p class = "project__description u-margin-t-small">A user-friendly movie-searching dashboard to just browse a couple movies.</p>  
+                <p class = "project__description">A user-friendly movie-searching dashboard to just browse a couple movies.</p>  
             <p class = "project__tags u-margin-t-small">ReactJs</p>
             <div class="card__links">
             <img src="/logo.svg" alt="github">
@@ -101,11 +105,18 @@
     </div>
 
 
-    <div class="center ">
- <div class="btn btn--shadow btn--animate u-margin-t-medium">
+    <div class="center">
+    <div class="btn btn--shadow btn--animate u-margin-t-medium">
             More projects
         </div>        
     </div>
+
+    <section id = "about" class="about">
+        <div class="section-header row">
+            <h1>02.AB0̸UT</h1>
+        </div>
+    </section>
+
     <section id = "contact" class="contact-form row grid-container">
         <div class="col-center">
             <div class="contact-form__container">
@@ -117,7 +128,9 @@
         </div>
     </div>
     </section>
+    
 </section>
+
 <section class="footer ">
 
     <h1 class = "title--footer ">Designed and built by Ricardo Tlatelpa</h1>

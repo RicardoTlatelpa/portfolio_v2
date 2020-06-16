@@ -25,3 +25,9 @@ $font-size-normal: .8rem;
         color: $color-default;
     }
 }
+.section-header {
+    text-align: left;
+    font-size: 70px;
+    color: $color-light-blue;
+    transform: translateY(25%);
+}
