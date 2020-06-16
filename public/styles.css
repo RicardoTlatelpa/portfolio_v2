@@ -66,10 +66,17 @@ body {
   grid-column: 2 /span 4;
   z-index: 100000;
   height: 100%; }
+  .col-4--2 {
+    grid-column: 2/ 9;
+    z-index: 100000;
+    height: 100%;
+    background-color: #FFFF; }
 
 .col-8 {
   background-color: #FFFF;
   grid-column: 6 / -1; }
+  .col-8--2 {
+    grid-column: 9 / -1; }
 
 .col-center {
   grid-column: 5 / 9; }
@@ -138,7 +145,7 @@ body {
 .card {
   color: black;
   border-radius: 10px;
-  padding: 4rem 4rem 2rem 7rem; }
+  padding: 4rem 4rem 2rem 4rem; }
   .card--right {
     text-align: right; }
   .card__feature {
@@ -189,7 +196,10 @@ body {
   background-image: linear-gradient(to bottom, #0086DA, #016ECD);
   width: 100%; }
   .portfolio__header {
-    text-align: center; }
+    text-align: left;
+    font-size: 100px;
+    color: #069EE8;
+    transform: translateY(29%); }
 
 .project {
   height: 100%; }
@@ -213,6 +223,11 @@ body {
     width: 100%;
     -webkit-box-shadow: 5px 5px 15px 5px #000000;
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3); }
+  .project__content--2 {
+    transform: translateX(-11%);
+    z-index: 100000;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3); }
   .project__tags {
     width: 100%;
     margin-bottom: .2rem !important;
@@ -220,6 +235,8 @@ body {
     font-size: .7rem; }
   .project-info {
     transform: translateX(-11%) translateY(30px); }
+  .project-info--2 {
+    transform: translateY(30px); }
 
 .layer {
   position: absolute;

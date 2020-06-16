@@ -3,7 +3,10 @@
     background-image: linear-gradient(to bottom, $color-main-light, $color-main-dark);
     width: 100%;
     &__header {
-        text-align: center;
+        text-align: left;
+        font-size: 100px;
+        color: $color-light-blue;
+        transform: translateY(29%);
     };
 }
 .project {
@@ -34,15 +37,27 @@
         -webkit-box-shadow: 5px 5px 15px 5px #000000; 
         box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.3);
     }
-&__tags {
-    width: 100%;
-    margin-bottom: .2rem !important;
-    color:#777;
-    font-size: .7rem;
-}
-&-info {
-    transform: translateX(-11%) translateY(30px);
-}
+    &__content--2 {
+        transform: translateX(-11%);
+        z-index: 100000;    
+        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+        box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.3);
+    }
+    &__tags {
+        width: 100%;
+        margin-bottom: .2rem !important;
+        color:#777;
+        font-size: .7rem;
+    }
+    &-info {
+        transform: translateX(-11%) translateY(30px);
+    }
+    &-info--2{
+        transform: translateY(30px);
+    }
+
+
+
 }
 .layer {
     position: absolute;
