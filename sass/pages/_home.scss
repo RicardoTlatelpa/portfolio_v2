@@ -1,9 +1,7 @@
 .landing-page {
     height: 100vh;
     width: 100%;
-    position:relative;
-    
-    
+    position:relative;        
     &__intro {
         animation-name: moveUp;
         animation-duration: 0.3s;
@@ -44,7 +42,24 @@
     position: fixed;
     z-index: 10000;
     color: $color-default;
-    bottom: 0;
-    right: 0;
+    bottom: 1rem;
+    right: 1rem;   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    a{
+        writing-mode: vertical-rl;
+        text-decoration: none;
+        color: inherit;        
+        text-align: left;
+        &:hover{
+            color: $color-light-blue;
+            cursor: pointer;
+        }
+    }
+    &__link{
+        transform: rotate(90deg);       
+    }
     
 }

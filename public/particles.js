@@ -17,7 +17,7 @@ particlesJS("particles-js", {
           "color": "#000000"
         },
         "polygon": {
-          "nb_sides": 5
+          "nb_sides": 1
         },
         "image": {
           "src": "img/github.svg",
@@ -71,11 +71,11 @@ particlesJS("particles-js", {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "grab"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
         "resize": true
