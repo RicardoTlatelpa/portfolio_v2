@@ -23,7 +23,7 @@
         </ul>        
     </header>
 
-        <div class="row landing-page__intro ">
+        <div class="parallax row landing-page__intro ">
         <h1 class = "title--huge u-margin-b-small">I'm a <span class = "highlight">Software Engineer </span><br/>based in NYC.</h1>
         <a href="mailto:rtlatelpa4@gmail.com">
         <div class="btn btn--gradient btn--animate-1 btn--fadein">
@@ -105,12 +105,12 @@
 
     </div>
 
-    <div class="center">
+    <!-- <div class="center">
         <div class="btn btn--shadow btn--animate u-margin-t-medium">
             More projects
         </div>        
     </div>
-   
+    -->
 
     <section id = "about" class="about row">
         <div class="section-header">
@@ -131,10 +131,10 @@
                 </h1>
                 <ul class="about__description__list u-margin-t-small">
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">HTML/CSS </li>
-                    <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">Sass</li>                    
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">Webpack</li>
+                    <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">PHP</li>                                                            
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">Drupal 8</li>                    
-                    <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">PHP</li>
+                    <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">Sass</li>
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">NodeJs/ExpressJs</li>
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">ReactJs/Redux</li>                     
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">MongoDB</li>
@@ -145,8 +145,10 @@
             </div>
         </div>
     </section>
-
-    <section id = "contact" class="contact-form row grid-container">
+    
+    <section id = "contact" class="contact-form row ">
+        
+        <div class = "grid-container">
         <div class="col-center">
             <div class="contact-form__container">
             <h1 class = "title u-margin-b-medium center">Let's get in touch</h1>
@@ -155,6 +157,7 @@
                 <div class="flex-center">Send Message</div>
             </div>
             </div>
+        </div>
         </div>
     </section>
     
@@ -169,11 +172,14 @@
     <img class = "footer__logo" src="/linkedin.svg" alt="linkedin logo">
     </a>
 </section>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src= "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script> -->
+<script>
+    window.addEventListener('scroll', function(){
+        const parallax = document.querySelector('.parallax');
+        let scrollPosition = window.pageYOffset;
+        parallax.style.transform = `translate3d(0px,${scrollPosition * 0.3}px,0px)`
+       
+    })
+</script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src = "/particles.js"></script>
 

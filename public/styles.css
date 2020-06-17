@@ -304,8 +304,8 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 5px solid #FFFF;
-  transform: translateY(-90%) translateX(-5%);
+  border: 0.4rem solid #fff;
+  transform: translateY(-95%) translateX(-5%);
   z-index: -1; }
 
 .contact-form {
