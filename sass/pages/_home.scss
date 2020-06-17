@@ -2,13 +2,11 @@
     height: 100vh;
     width: 100%;
     position:relative;        
-    &__intro {
-        animation-name: moveUp;
-        animation-duration: 0.3s;
+    &__intro {        
         padding: 0 1rem;
         position: absolute;
         top: 30%;
-        right: 43%;
+        right: 45%;
     }
     &__description {
         clip-path: polygon(0% 0%, 100% 0%, 100% 10%, 46% 59%, 0% 100%);
@@ -17,14 +15,12 @@
         top: 0;
         width: 100%;
         height: 100vh;
-        z-index: 100;
-                
+        z-index: 100;                
     }
 }
 .shadow-wrap {
     filter: drop-shadow(0 30px 30px rgba(0, 0, 0, 0.4));
 }
-
 .particle-container {
     background-color: $color-main-light;
     bottom: 0;
@@ -32,22 +28,21 @@
     width: 100%;
     height: 100%;
     clip-path: polygon(100% 10%, 0 100%, 100% 100%, 100% 100%);
-    z-index: -1;
-    
+    z-index: -1;    
 }
 .highlight {
     color: $color-main-light;
 }
 .rotated-email{
+    transform: translateX(13%);
     position: fixed;
     z-index: 10000;
     color: $color-default;
     bottom: 1rem;
-    right: 1rem;   
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     a{
         writing-mode: vertical-rl;
         text-decoration: none;
@@ -60,6 +55,5 @@
     }
     &__link{
         transform: rotate(90deg);       
-    }
-    
+    }    
 }

@@ -36,9 +36,13 @@
     <div id="particles-js" class="particle-container">
         <h1>Ricardo Tlatelpa</h1>
     </div>
-    <div class="rotated-email">
-        <img class = "rotated-email__link u-margin-b-small" src="/logo.svg" alt="github logo">
-        <img class = "rotated-email__link u-margin-b-small" src="/linkedin.svg" alt="linkedin logo">
+    <div class="rotated-email row">                
+        <a class = "rotated-email__link u-margin-b-small" href="https://github.com/RicardoTlatelpa">
+        <img  src="/logo.svg" alt="github logo">
+        </a>
+        <a class = "rotated-email__link u-margin-b-small" href="https://www.linkedin.com/in/ricardo-tlatelpa-971b2a179">
+        <img  src="/linkedin.svg" alt="linkedin logo">
+    </a>
         <a  href="mailto:rtlatelpa4@gmail.com">
             <p>@rtlatelpa@gmail.com</p>
         </a>
@@ -62,9 +66,14 @@
                 <h1 class = "title--project u-margin-t-small">Node-Todo</h1>           
                     <p class = "project__description ">A fast and friendly Todo-list that helps users priotize their daily tasks.</p>  
                 <p class = "project__tags u-margin-t-small">ReactJs, Nodejs, Expressjs, Google oAuth, PassportJs, MongoDB</p>
-                <div class="card__links">
-                <img src="/logo.svg" alt="github">
-                </div>
+                <div class="card__links card__links--1">
+                    <a href="#">
+                        <img class = "card-item" src="/logo.svg" alt="github">
+                    </a>
+                    <a href="#">
+                        <img src="/out.svg" alt="Site link" class="card-item">
+                    </a>
+                </div>        
             </div>
         </div>
     </div>
@@ -76,7 +85,12 @@
                 <p class = "project__description ">Taking advantage of the Stripe/Sendgrid/Google Oauth APIs, with a react/redux front end. Users can reach their emailing list and get feedback from their users.</p>  
             <p class = "project__tags u-margin-t-small">ReactJs, Redux/Redux Form, Nodejs, Expressjs, Google oAuth, PassportJs, Stripe API,Sendgrid API, MongoDB</p>
             <div class="card__links">
-                <img src="/logo.svg" alt="github">
+                <a href="#">
+                    <img class = "card-item" src="/logo.svg" alt="github">
+                </a>
+                <a href="#">
+                    <img src="/out.svg" alt="Site link" class="card-item">
+                </a>
             </div>        
         </div>
 
@@ -97,9 +111,14 @@
                 <h1 class = "title--project u-margin-t-small">Couple-Movies</h1>           
                     <p class = "project__description">A user-friendly movie-searching dashboard to just browse a couple movies.</p>  
                 <p class = "project__tags u-margin-t-small">ReactJs</p>
-                <div class="card__links">
-                <img src="/logo.svg" alt="github">
-                </div>
+                <div class="card__links card__links--1">
+                    <a href="#">
+                        <img class = "card-item" src="/logo.svg" alt="github">
+                    </a>
+                    <a href="#">
+                        <img src="/out.svg" alt="Site link" class="card-item">
+                    </a>
+                </div>        
             </div>
         </div>
 
@@ -125,16 +144,18 @@
             </div>
             <div class="about__description col-stretch-6">
                <span class="about__description--title">Hi,</span><br/>
+               <p class = "about__paragraph">
                 My name is Ricardo Tlatelpa and I am a passionate Web Designer/ Web Developer. Not only have I involved myself in the intricacies of Front End Development, but I have also explored back end development with languages such as PHP and Nodejs. I also have implemented database queries with MongoDB and MySQL. I currently work for the CUNY Research Foundation and help developers design/architect future projects and manage CMS systems; specifically Drupal 8 and Wordpress. I love programming and I especially love architecting and building front-end or full-stack projects. 
+            </p>
                 <h1 class="about__description--title u-margin-t-medium">
                     Skills
                 </h1>
                 <ul class="about__description__list u-margin-t-small">
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">HTML/CSS </li>
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">Webpack</li>
-                    <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">PHP</li>                                                            
+                    <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">Sass</li>                                                                               
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">Drupal 8</li>                    
-                    <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">Sass</li>
+                    <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">PHP</li> 
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">NodeJs/ExpressJs</li>
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">ReactJs/Redux</li>                     
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">MongoDB</li>
@@ -152,10 +173,11 @@
         <div class="col-center">
             <div class="contact-form__container">
             <h1 class = "title u-margin-b-medium center">Let's get in touch</h1>
-            <a href="mailto:rtlatelpa4@gmail.com"></a>
-            <div class = "btn btn--shadow btn--animate flex-center">
-                <div class="flex-center">Send Message</div>
+            <a href="mailto:rtlatelpa4@gmail.com">
+            <div class = "btn btn--shadow btn--animate flex-center">                
+                <div class="flex-center">Send Message</div>            
             </div>
+        </a>
             </div>
         </div>
         </div>
@@ -168,7 +190,7 @@
     <a href="https://github.com/RicardoTlatelpa">
     <img class = "footer__logo" src="/logo.svg" alt="github logo">
     </a>
-    <a href="https://www.linkedin.com/in/ricardo-tlatelpa-971b2a179">
+    <a href="https://www.linkedin.com/in/ricardo-tlatelpa-971b2a179">        
     <img class = "footer__logo" src="/linkedin.svg" alt="linkedin logo">
     </a>
 </section>
@@ -176,8 +198,7 @@
     window.addEventListener('scroll', function(){
         const parallax = document.querySelector('.parallax');
         let scrollPosition = window.pageYOffset;
-        parallax.style.transform = `translate3d(0px,${scrollPosition * 0.3}px,0px)`
-       
+        parallax.style.transform = `translate3d(0px,${scrollPosition * 0.3}px,0px)`       
     })
 </script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

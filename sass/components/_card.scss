@@ -1,7 +1,28 @@
 .card {
     color: black; 
     border-radius: 10px;
-    padding: 4rem 4rem 2rem 4rem;
+    padding: 4rem 4rem 5rem 4rem;
+    &__links {
+        display: flex;
+        align-items: center;
+        & > * {
+            margin-right: .5rem;
+        }
+        &--1{
+            justify-content: flex-end;
+            & > * {
+                margin-right: 0rem;
+                margin-left: .5rem;
+            }
+        }
+    }
+    &-item {
+        width: 25px;
+        height: 25px;
+        filter: invert(24%) sepia(94%) saturate(2007%) hue-rotate(193deg) brightness(96%) contrast(99%);
+        
+        
+    }
     
     
     &--right {

@@ -12,17 +12,16 @@
         padding-top: 1rem;     
         padding-left: 1rem;
         padding-right: 2rem;
+        font-weight: 300;
         color: $color-default;
         &--title{
             font-size: 3rem;
             font-weight: bold;
         }
-        &__list {
-            
+        &__list {            
             display: grid;
-            grid-template-columns: repeat(5,1fr);
-            grid-gap: 2rem;
-            
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 2rem;            
             .skill-item {
                 display: flex;
                 align-items: center;
@@ -42,5 +41,8 @@
         transform: translateY(-95%) translateX(-5%) ;      
         z-index: -1;    
        
+    }
+    &__paragraph{
+        line-height: 2;        
     }
 }
