@@ -55,8 +55,8 @@ body {
 .section-header {
   text-align: left;
   font-size: 70px;
-  color: #00acff;
-  transform: translateY(25%); }
+  color: #20b4fe;
+  transform: translateY(10%); }
 
 .row {
   max-width: 87.5rem;
@@ -210,7 +210,7 @@ body {
     text-decoration: none;
     writing-mode: vertical-rl; }
     .rotated-email__email:hover {
-      color: #00acff; }
+      color: #20b4fe; }
 
 .card {
   color: black;
