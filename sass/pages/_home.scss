@@ -33,27 +33,22 @@
 .highlight {
     color: $color-main-light;
 }
-.rotated-email{
-    transform: translateX(13%);
-    position: fixed;
-    z-index: 10000;
-    color: $color-default;
+.rotated-email{    
+    position: fixed;   
     bottom: 1rem;
     right: 0;
+    transform: translateX(20%);
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    a{
-        writing-mode: vertical-rl;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    &__email {
+        color: $color-default;
         text-decoration: none;
-        color: inherit;        
-        text-align: left;
-        &:hover{
-            color: $color-light-blue;
-            cursor: pointer;
+        &:hover {
+            color: $color-light-blue-1;
         }
+        writing-mode: vertical-rl; 
     }
-    &__link{
-        transform: rotate(90deg);       
-    }    
 }

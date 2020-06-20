@@ -55,7 +55,7 @@ body {
 .section-header {
   text-align: left;
   font-size: 70px;
-  color: #069EE8;
+  color: #00acff;
   transform: translateY(25%); }
 
 .row {
@@ -93,13 +93,23 @@ body {
   grid-column: 5 / 9; }
 
 .header {
-  padding-top: 1rem;
-  display: flex;
-  justify-content: space-between; }
+  position: fixed;
+  z-index: 10000000000000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  background: #FFFF;
+  padding: 1rem; }
+  .header__container {
+    display: flex;
+    justify-content: space-between; }
   .header__title {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #0086DA; }
+    color: #0086DA;
+    text-decoration: none; }
   .header__nav {
     display: flex;
     list-style: none; }
@@ -109,8 +119,7 @@ body {
 .nav__item {
   font-size: 1rem;
   text-decoration: none;
-  color: #0086DA;
-  font-weight: 300; }
+  color: #0086DA; }
 
 @keyframes fade {
   0% {
@@ -142,44 +151,16 @@ body {
   .btn--shadow {
     box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.45); }
   .btn--animate-1:hover {
-    transform: translateY(-10px) scale(1.1);
+    transform: scale(1.1);
     box-shadow: 1px 5px 5px -1px rgba(0, 0, 0, 0.45); }
+  .btn--animate-1:active {
+    transform: scale(1.1) translateY(-5px); }
   .btn--animate:hover {
     transform: translateY(10px) scale(0.9);
     box-shadow: 1px 5px 5px -2px rgba(0, 0, 0, 0.45); }
   .btn--animate:active {
     transform: translateY(9px) scale(0.9);
     box-shadow: none; }
-  .btn--fadein {
-    animation-name: moveUp;
-    animation-duration: 0.8s; }
-
-.card {
-  color: black;
-  border-radius: 10px;
-  padding: 4rem 4rem 5rem 4rem; }
-  .card__links {
-    display: flex;
-    align-items: center; }
-    .card__links > * {
-      margin-right: .5rem; }
-    .card__links--1 {
-      justify-content: flex-end; }
-      .card__links--1 > * {
-        margin-right: 0rem;
-        margin-left: .5rem; }
-  .card-item {
-    width: 25px;
-    height: 25px;
-    filter: invert(24%) sepia(94%) saturate(2007%) hue-rotate(193deg) brightness(96%) contrast(99%); }
-  .card--right {
-    text-align: right; }
-  .card__feature {
-    display: inline-block;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: bold;
-    background-image: linear-gradient(to right, #3FBFFD, #016ECD); }
 
 .landing-page {
   height: 100vh;
@@ -215,25 +196,48 @@ body {
   color: #0086DA; }
 
 .rotated-email {
-  transform: translateX(13%);
   position: fixed;
-  z-index: 10000;
-  color: #FFFF;
   bottom: 1rem;
   right: 0;
+  transform: translateX(20%);
   display: flex;
   flex-direction: column;
-  align-items: flex-start; }
-  .rotated-email a {
-    writing-mode: vertical-rl;
+  align-items: center;
+  justify-content: center;
+  align-items: center; }
+  .rotated-email__email {
+    color: #FFFF;
     text-decoration: none;
-    color: inherit;
-    text-align: left; }
-    .rotated-email a:hover {
-      color: #069EE8;
-      cursor: pointer; }
-  .rotated-email__link {
-    transform: rotate(90deg); }
+    writing-mode: vertical-rl; }
+    .rotated-email__email:hover {
+      color: #00acff; }
+
+.card {
+  color: black;
+  border-radius: 10px;
+  padding: 4rem 4rem 5rem 4rem; }
+  .card__links {
+    display: flex;
+    align-items: center; }
+    .card__links > * {
+      margin-right: .5rem; }
+    .card__links--1 {
+      justify-content: flex-end; }
+      .card__links--1 > * {
+        margin-right: 0rem;
+        margin-left: .5rem; }
+  .card-item {
+    width: 25px;
+    height: 25px;
+    filter: invert(24%) sepia(94%) saturate(2007%) hue-rotate(193deg) brightness(96%) contrast(99%); }
+  .card--right {
+    text-align: right; }
+  .card__feature {
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #3FBFFD, #016ECD); }
 
 .portfolio {
   padding-top: 100px;
@@ -289,6 +293,9 @@ body {
     opacity: 0;
     z-index: 0; }
 
+.svg-icon--dark {
+  fill: #016ECD; }
+
 .about__image {
   position: relative;
   z-index: 20; }
@@ -299,7 +306,7 @@ body {
 
 .about__description {
   padding-top: 1rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
   padding-right: 2rem;
   font-weight: 300;
   color: #FFFF; }
