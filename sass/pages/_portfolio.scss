@@ -45,7 +45,11 @@
         font-size: .7rem;
     }
     &-info {
-        transform: translateX(-7%) translateY(30px);
+        transform: translateX(-11%) translateY(30px);
+        &--reverse {
+            transform: translateY(30px);
+            
+        }
     }
     &-info--2{
         transform: translateY(30px);

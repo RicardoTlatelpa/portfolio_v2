@@ -6,7 +6,7 @@
     <title>Ricardo Tlatelpa</title>
     <link rel="stylesheet" href="/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -82,7 +82,7 @@
             <div class="card--right">
                 <p class = "card__feature">Featured Project</p>
                 <h1 class = "title--project u-margin-t-small">Node-Todo</h1>           
-                    <p class = "project__description ">A fast and friendly Todo-list that helps users priotize their daily tasks.</p>  
+                    <p class = "project__description u-margin-t-small ">A fast and friendly Todo-list that helps users priotize their daily tasks.</p>  
                 <p class = "project__tags u-margin-t-small">ReactJs, Nodejs, Expressjs, Google oAuth, PassportJs, MongoDB</p>
                 <div class="card__links card__links--1">
                     <a href="#">
@@ -97,12 +97,34 @@
             </div>
         </div>
     </div>
-
-    <div class="project row grid-container even-spacing">            
+    <div class="project row grid-container even-spacing">   
+        <div class="project-info--reverse col-8--reverse card">
+            <div class="card--left">
+                <p class = "card__feature">Featured Project</p>
+                <h1 class = "title--project u-margin-t-small">Emaily</h1>           
+                    <p class = "project__description u-margin-t-small ">Taking advantage of the Stripe/Sendgrid/Google Oauth APIs, with a react/redux front end. Users can reach their emailing list and get feedback from their users.</p>  
+                <p class = "project__tags u-margin-t-small">ReactJs, Redux/Redux Form, Nodejs, Expressjs, Google oAuth, PassportJs, Stripe API,Sendgrid API, MongoDB</p>
+                <div class="card__links ">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23">
+                            <path class = "svg-icon--dark" id="logo" d="M12,.5A11.9,11.9,0,0,0,0,12.292,11.812,11.812,0,0,0,8.2,23.48c.6.111.82-.254.82-.567,0-.28-.01-1.022-.015-2-3.338.711-4.042-1.582-4.042-1.582A3.143,3.143,0,0,0,3.633,17.6c-1.087-.731.084-.716.084-.716A2.51,2.51,0,0,1,5.555,18.1a2.584,2.584,0,0,0,3.495.981A2.5,2.5,0,0,1,9.81,17.5c-2.665-.3-5.466-1.309-5.466-5.827A4.505,4.505,0,0,1,5.579,8.513a4.126,4.126,0,0,1,.105-3.121s1.005-.316,3.3,1.209a11.506,11.506,0,0,1,6,0c2.28-1.525,3.285-1.209,3.285-1.209a4.24,4.24,0,0,1,.12,3.121,4.523,4.523,0,0,1,1.23,3.164c0,4.53-2.805,5.527-5.475,5.817a2.8,2.8,0,0,1,.81,2.182c0,1.578-.015,2.846-.015,3.229,0,.309.21.678.825.56A11.776,11.776,0,0,0,24,12.292,11.9,11.9,0,0,0,12,.5Z" transform="translate(0 -0.5)" fill="#fff"/>
+                          </svg>                          
+                    </a>
+                    <a href="#">
+                        <img src="/out.svg" alt="Site link" class="card-item">
+                    </a>
+                </div>        
+            </div>
+        </div>
+        <div class="col-4--reverse">            
+            <img class= "project__content"  src="/Emaily.png" alt="emaily img">        
+            </div>
+    </div>
+    <!-- <div class="project row grid-container even-spacing">            
         <div class="project-info--2 col-4--2 card">            
             <p class = "card__feature">Featured Project</p>
             <h1 class = "title--project u-margin-t-small">Emaily</h1>           
-                <p class = "project__description ">Taking advantage of the Stripe/Sendgrid/Google Oauth APIs, with a react/redux front end. Users can reach their emailing list and get feedback from their users.</p>  
+                <p class = "project__description u-margin-t-small ">Taking advantage of the Stripe/Sendgrid/Google Oauth APIs, with a react/redux front end. Users can reach their emailing list and get feedback from their users.</p>  
             <p class = "project__tags u-margin-t-small">ReactJs, Redux/Redux Form, Nodejs, Expressjs, Google oAuth, PassportJs, Stripe API,Sendgrid API, MongoDB</p>
             <div class="card__links">
                 <a href="#">
@@ -115,12 +137,10 @@
                 </a>
             </div>        
         </div>
-
             <div class="col-8--2">            
                 <img class= "project__content project__content--2"  src="/Emaily.png" alt="emaily img">        
             </div>
-
-    </div>
+    </div> -->
 
     <div class="project row grid-container even-spacing">
         <div class="col-4">            
@@ -131,7 +151,7 @@
             <div class="card--right">
                 <p class = "card__feature">Featured Project</p>
                 <h1 class = "title--project u-margin-t-small">Couple-Movies</h1>           
-                    <p class = "project__description">A user-friendly movie-searching dashboard to just browse a couple movies.</p>  
+                    <p class = "project__description u-margin-t-small">A user-friendly movie-searching dashboard to just browse a couple movies.</p>  
                 <p class = "project__tags u-margin-t-small">ReactJs</p>
                 <div class="card__links card__links--1">
                     <a href="#">
@@ -180,11 +200,12 @@
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">Sass</li>                                                                               
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">Drupal 8</li>                    
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">PHP</li> 
-                    <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">NodeJs/ExpressJs</li>
+                    <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">GulpJs</li>
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">ReactJs/Redux</li>                     
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">MongoDB</li>
                     <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">Wordpress</li>
-                    <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">GulpJs</li>
+                    <li class="skill-item"><img src="/arrow.svg" alt="arrow icon" class="skill-item__icon">Node/ExpressJs</li>
+                    
                                                    
                 </ul>
             </div>
