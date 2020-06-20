@@ -112,9 +112,10 @@ body {
   padding: .7rem; }
   .header__container {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
   .header__title {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: #0086DA;
     text-decoration: none; }
@@ -127,7 +128,8 @@ body {
 .nav__item {
   font-size: 1rem;
   text-decoration: none;
-  color: #0086DA; }
+  color: #0086DA;
+  font-weight: lighter; }
 
 @keyframes fade {
   0% {

@@ -10,11 +10,12 @@
     &__container {        
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     padding: .7rem;
     
     &__title {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         font-weight: bold;
         color: $color-main-light;
         text-decoration: none;
@@ -31,7 +32,8 @@
     &__item {
         font-size: 1rem;
         text-decoration: none;
-        color: $color-main-light;        
+        color: $color-main-light;  
+        font-weight: lighter;      
     }
     
 }
