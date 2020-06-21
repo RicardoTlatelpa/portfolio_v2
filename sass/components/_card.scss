@@ -15,6 +15,13 @@
                 margin-left: .5rem;
             }
         }
+        &--reverse {
+            @include respond(tab-port){
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+        }
     }
     &-item {
         width: 25px;
@@ -26,10 +33,21 @@
     &--right {
         text-align: right;
         padding-left: 100px;
+        @include respond(tab-port){
+            background-color: $color-default;
+            padding: 2rem;
+            text-align: left;
+            border-radius: 1rem;
+        }
     }
     &--left {
         text-align: left;
         padding-right: 100px;
+        @include respond(tab-port){
+            background-color: $color-default;
+            padding: 2rem;
+            border-radius: 1rem;
+        }
     }
     &__feature {
         display: inline-block;
@@ -37,5 +55,8 @@
         -webkit-background-clip: text;
         font-weight: bold;
         background-image: $shiny-linear-image;
+    }
+    @include respond(tab-port){
+        padding: 0;
     }
 }

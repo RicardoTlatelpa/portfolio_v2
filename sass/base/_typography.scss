@@ -9,6 +9,13 @@ $font-size-normal: .8rem;
     font-size: $font-size-small;
     &--huge {
         font-size: $font-size-medium;
+        @include respond(tab-port) {
+            font-size: $font-size-small;
+        }
+
+        @include respond(phone){
+            font-size: 1.7rem;
+        }
     }
     &--box {
         display: inline-block;
@@ -30,4 +37,10 @@ $font-size-normal: .8rem;
     font-size: 70px;
     color: $color-light-blue-1;
     transform: translateY(20%);
+    @include respond(tab-land){
+        font-size: 50px;
+    }
+    @include respond(phone) {
+        font-size: 40px;
+    }
 }

@@ -28,5 +28,7 @@
         transform: translateY(9px) scale(0.9);
         box-shadow: none;
     }
-    
+    @include respond(phone) {
+        font-size: .8rem;
+    }
 }

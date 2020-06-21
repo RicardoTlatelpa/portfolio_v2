@@ -13,8 +13,7 @@
         font-size: 1rem;
     }
     &-title {
-        color: $color-default;
-        
+        color: $color-default;        
     }
     &__links {
         display: flex;
@@ -31,6 +30,15 @@
         width: 100%;          
         -webkit-box-shadow: 5px 5px 15px 5px #000000; 
         box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.3);
+        @include respond(tab-port){
+            height: 100%;
+            width: 55%;
+            transform: translate(40%, 5%);
+        }
+        @include respond(phone){
+            width: 90%;
+            transform: translate(5%, 5%);
+        }
     }
     &__content--2 {
         transform: translateX(-11%);
@@ -47,8 +55,13 @@
     &-info {
         transform: translateX(-11%) translateY(30px);
         &--reverse {
-            transform: translateY(30px);
-            
+            transform: translateY(30px);      
+            @include respond(tab-port){
+                transform: none;
+            }      
+        }
+        @include respond(tab-port){
+            transform: none;
         }
     }
     &-info--2{
