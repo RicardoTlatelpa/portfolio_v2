@@ -55,6 +55,9 @@
         -webkit-background-clip: text;
         font-weight: bold;
         background-image: $shiny-linear-image;
+        @include respond(phone) {
+            font-size: .9rem;
+        }
     }
     @include respond(tab-port){
         padding: 0;

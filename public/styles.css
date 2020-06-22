@@ -54,9 +54,15 @@ body {
     border: 1px dashed #FFFF; }
   .title--project {
     font-size: 1.6rem; }
+    @media (max-width: 37.5rem) {
+      .title--project {
+        font-size: 1.4rem; } }
   .title--footer {
     font-size: 0.8rem;
     color: #FFFF; }
+  @media (max-width: 37.5rem) {
+    .title {
+      font-size: 1.7rem; } }
 
 .section-header {
   text-align: left;
@@ -68,7 +74,7 @@ body {
       font-size: 50px; } }
   @media (max-width: 37.5rem) {
     .section-header {
-      font-size: 40px; } }
+      font-size: 32px; } }
 
 .row {
   max-width: 87.5rem;
@@ -83,7 +89,7 @@ body {
   grid-template-columns: repeat(12, 1fr); }
   @media (max-width: 56.25em) {
     .grid-container {
-      grid-template-rows: repeat(2, 1fr); } }
+      grid-template-rows: repeat(2, min-content); } }
 
 .col-stretch-5 {
   grid-column: 1 / span 5; }
@@ -363,6 +369,9 @@ body {
     -webkit-background-clip: text;
     font-weight: bold;
     background-image: linear-gradient(to right, #3FBFFD, #016ECD); }
+    @media (max-width: 37.5rem) {
+      .card__feature {
+        font-size: .9rem; } }
   @media (max-width: 56.25em) {
     .card {
       padding: 0; } }
@@ -379,6 +388,9 @@ body {
     color: inherit;
     font-weight: 300;
     font-size: 1rem; }
+    @media (max-width: 37.5rem) {
+      .project__description {
+        font-size: .9rem; } }
   .project-title {
     color: #FFFF; }
   .project__links {
@@ -448,6 +460,14 @@ body {
     object-fit: cover;
     width: 100%;
     height: 100%; }
+    @media (max-width: 37.5rem) {
+      .about__image img {
+        width: 90%; } }
+  @media (max-width: 37.5rem) {
+    .about__image {
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
 
 .about__description {
   padding-top: 1rem;
@@ -458,6 +478,9 @@ body {
   .about__description--title {
     font-size: 3rem;
     font-weight: bold; }
+    @media (max-width: 37.5rem) {
+      .about__description--title {
+        font-size: 1.4rem; } }
   .about__description__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -471,6 +494,23 @@ body {
       .about__description__list .skill-item__icon {
         width: 15px;
         height: 15px; }
+        @media (max-width: 37.5rem) {
+          .about__description__list .skill-item__icon {
+            width: 10px;
+            height: 10px; } }
+      @media (max-width: 37.5rem) {
+        .about__description__list .skill-item {
+          font-size: 8px; } }
+    @media (max-width: 75em) {
+      .about__description__list {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); } }
+    @media (max-width: 37.5rem) {
+      .about__description__list {
+        grid-template-columns: repeat(4, 1fr); } }
+  @media (max-width: 37.5rem) {
+    .about__description {
+      padding-left: .8rem;
+      padding-right: .8rem; } }
 
 .about__image-frame {
   position: absolute;
@@ -487,6 +527,17 @@ body {
   line-height: 2;
   font-size: 1.1rem;
   font-family: 'Hind Madurai', sans-serif; }
+  @media (max-width: 37.5rem) {
+    .about__paragraph {
+      font-size: .9rem; } }
+
+@media (max-width: 75em) {
+  .about {
+    width: 70%; } }
+
+@media (max-width: 37.5rem) {
+  .about {
+    width: 100%; } }
 
 .contact-form {
   padding-top: 150px;
@@ -504,6 +555,10 @@ body {
     padding: 1rem; }
     .contact-form__input--message {
       height: 100px; }
+  @media (max-width: 37.5rem) {
+    .contact-form {
+      padding-top: 75px;
+      padding-bottom: 0px; } }
 
 .footer {
   font-family: 'Hind Madurai', sans-serif;

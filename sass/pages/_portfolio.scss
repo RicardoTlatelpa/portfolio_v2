@@ -11,6 +11,9 @@
         color: inherit;
         font-weight: 300;
         font-size: 1rem;
+        @include respond(phone){
+            font-size: .9rem;
+        }
     }
     &-title {
         color: $color-default;        

@@ -26,10 +26,16 @@ $font-size-normal: .8rem;
     }
     &--project {
         font-size: $font-size-text;
+        @include respond(phone){
+            font-size: 1.4rem;
+        }
     }
     &--footer {
         font-size: $font-size-normal;
         color: $color-default;
+    }
+    @include respond(phone){
+        font-size: 1.7rem;
     }
 }
 .section-header {
@@ -41,6 +47,6 @@ $font-size-normal: .8rem;
         font-size: 50px;
     }
     @include respond(phone) {
-        font-size: 40px;
+        font-size: 32px;
     }
 }
