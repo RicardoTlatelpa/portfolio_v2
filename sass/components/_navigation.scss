@@ -37,8 +37,7 @@
             list-style: none;
             display: none;
             @include respond(tab-port){
-
-                display: block;
+                display: flex;
             }
         }
     }

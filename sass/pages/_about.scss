@@ -18,7 +18,6 @@
         }
     }
     &__description{ 
-
         padding-top: 1rem;     
         padding-left: 2rem;
         padding-right: 2rem;
@@ -34,7 +33,8 @@
         &__list {            
             display: grid;
             grid-template-columns: repeat(4,1fr);
-            grid-gap: 2rem;            
+            grid-row-gap: 1.5rem;            
+            grid-column-gap: 2.2rem;
             .skill-item {
                 display: flex;
                 align-items: center;
@@ -50,7 +50,7 @@
                     }
                 }
                 @include respond(phone){
-                    font-size: 8px;
+                    font-size: 10px;
                 }
             }
             @include respond(tab-land){
@@ -58,11 +58,14 @@
             }
             @include respond(phone){
                 grid-template-columns: repeat(4,1fr);
+                grid-gap: 1.5rem;
             }
         } 
         @include respond(phone){    
-            padding-left: .8rem;
-            padding-right: .8rem;
+            width: 90%;
+            margin: 0 auto;
+            padding-left: .2rem;
+            padding-right: .2rem;
         }       
     }
     &__image-frame {   
@@ -85,7 +88,7 @@
         }
     }
     @include respond(tab-land){
-        width: 70%;
+        width: 82%;
     }
     @include respond(phone){
         width: 100%;
